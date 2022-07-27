@@ -1,3 +1,10 @@
+NOTE THIS IS NOT DONE
+
+will be errors.
+
+
+
+
 (In)secure Debian VM Install
 
 - :warning:  (this guide will omit all the vm steps etc. it' will only include the OS install)
