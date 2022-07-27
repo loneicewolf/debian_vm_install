@@ -35,6 +35,7 @@ boot it as **`BIOS`** - no UEFI(we already have QUBES OS as UEFI and CRYPTO), an
 
 
 `*` *NO apt software. we don't want a bloated system. if we need/want a certain app, we can install it later(from source)*
+
 `*` *No survey since this will be used insecurely, so we don't want to make misleading reports.*
 
 
@@ -61,6 +62,8 @@ lsblk            >> LSBLK_BOOT_1
 
 nano `APT_1.sh`
 
+- **`note   if this is a kali vm (or if sec tools will be installed into it), kali-desk lxde for example. `**
+
 ```sh
 
 echo "do not be root, use sudo"
@@ -82,7 +85,6 @@ apt autopurge
 
 apt remove telnet* netcat* openssh-server* openssh-client* firefox* deluge* audacious* smplayer* vlc* lxmusic* parcellite*
 sudo apt autoremove
-
 
 echo "reboot now and then MOVE THIS FILE TO  APT_1.DONE.txt"
 
